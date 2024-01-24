@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Our Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo"><span>Kopi</span> Mesin </a>
+
+        <nav class="navbar">
+            <a href="index.html" class="active" >Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="new.html">News</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <section class="menu">
+        <div class="menu-content">
+            <h1>Foods & Baverages</h1>
+            <h2>Best Seller</h2>
+            <section class="items">
+              <div class="item">
+                <img src="images/aglio.jpg">
+                <h4>Aglio Olio</h4>
+                <p>rm12</p>
+                <button>Order</button>
+              </div>
+              <div class="item">
+                <img src="images/ckn grill.webp">
+                <h4>Chicken Grill</h4>
+                <p>RM15</p>
+                <button>Order</button>
+              </div>
+              <div class="item">
+                <img src="images/Fruitti-Fried-Chicken-Chop.webp">
+                <h4>Chicken Chop</h4>
+                <p>RM16</p>
+                <button>Order</button>
+              </div>
+              <div class="item">
+                <img src="images/nasi lemak.jpeg">
+                <h4>nasi Lemak</h4>
+                <p>RM8</p>
+                <button>Order</button>
+              </div>
+              <div class="item">
+                <img src="images/HOT CHOCOLATE.jpg">
+                <h4>Hot Chocolate</h4>
+                <p>RM10</p>
+                <button>Order</button>
+              </div>
+              <div class="item">
+                <img src="images/hazelnut-frappe.jpg">
+                <h4>Hazelnut Frappe</h4>
+                <p>RM12</p>
+                <button>Order</button>
+                </div>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: sans-serif;
+                box-sizing: border-box;
+            }
+            body{
+                background: url(images/blur\ bg.png);
+            }
+            h1{
+                text-align: center;
+                color: black;
+                font-size: 1.5rem;
+                padding-top: 80px;
+            }
+            h2 {
+                text-align: center;
+                color: red;
+                font-size: 1.5rem;
+                padding-top: 5px;
+            }
+            p{
+                text-align: center;
+                font-size: 1rem;
+                margin-top: 0;
+            }
+            .items{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    padding: 30px 20px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.item img:hover{
+    transform: scale(1.04);
+}
+.item h4{
+    padding: 5px;
+    text-align: center;
+}
+.item button{
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background-color: gray;
+    color: black;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+}
+.item button:hover{
+    transform: scale(1.08);
+}
+@media screen and (max-width:1000px){
+    .items{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width:768px){
+    .items{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+        </style>

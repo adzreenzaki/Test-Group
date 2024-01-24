@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Kopi Mesin</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo"><span>Kopi</span> Mesin </a>
+
+        <nav class="navbar">
+            <a href="index.html" class="active" >Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="new.html">News</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+<!--about-->
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="images/bg.jpg" alt="image-description" height="300" width="400" align="right">
+
+    </div>
+    <div class="about-text">
+        <h2>Our History</h2>
+        <p>Established in 2016 and only had one branch in Kubang Kerian, Kelantan at the beginning.</p>
+        <p>It has more than 30 branches in Malaysia and offers a variety of coffee menus such as black</p>
+        <p>coffee, latte coffee, to  coffee, milk espresso coffee Apart from coffee, it also offers a variety </p>
+        <p>of other food and drinks, such as baked bread, fried bananas, and fruit juice.</p> 
+    </div>
+</section>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' , sans-serif;
+    box-sizing: border-box;
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+/* Variables */
+.about{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(17rem, auto));
+    align-items:center;
+    gap: 1.5rem;
+    margin-top: 10%;
+}
+
+.about-img {
+    border-radius: 0.5rem;
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.about-text h2{
+    font-size: 1.8rem;
+    color: black;
+    text-transform: uppercase;
+    color: white;
+}
+
+.about-text p{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: justify;
+    margin: 0.5rem 0 1.1rem;
+    color: black;
+    margin: 20px 0 5px 0;
+}
+        body {
+            background: url(images/commercial_coffee_machines_grande.webp);
+            background-size: cover;
+        }
+
+    </style>

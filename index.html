@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Kopi Mesin</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo"><span>Kopi</span> Mesin </a>
+
+        <nav class="navbar">
+            <a href="index.html" class="active" >Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="new.html">News</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h1>Kopi<span> Mesin</span> will satisfy</h1>
+            <p>Every Coffee Lover</p>
+            <h3>"Bringing Joy One Cup in A Time"</h3>
+            <div class="btn-box">
+                <a href="#">Explore More</a>
+                <a href="about.html">Next </a>
+            </div>
+        </div>
+
+        <div class="home-sci">
+            <a href="#"><i class='bx bxl-tiktok'></i></a>
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+
+        </div>
+    </section>
+</body>
+
+<style>
+    body {
+    background: url(images/new\ bg\ img.png);
+    background-size: cover;
+    color: #ededed;
+}
+
+    .home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+    .home-content {
+        font-size: 30px;
+        max-width: 600px; 
+}
+.home-content h1{
+    font-size:50px;
+    color: black;
+    font-weight: 700;
+}
+.home-content p {
+    font-size: 50px;
+    color: black;
+    font-weight: 700;
+}
+
+.home-content h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(197, 13, 13);
+    margin: 20px 0 40px;
+
+}
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 354px;
+    height: 50px;
+}
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.btn-box a:nth-child(2) {
+    background: crimson;
+    color: black;
+}
+.btn-box a:nth-child(2):hover{
+    background: black;
+}
+.btn-box a:nth-child(2)::before{
+    background: white;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: crimson;
+    z-index: -1 ;
+    transition: .5s;
+}
+.btn-box a:hover::before {
+    width: 100%;
+}
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid crimson;
+    border-radius: 50%;
+    font-size: 20px;
+    color: crimson;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+}
+.home-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: white;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before{
+    width: 100%;
+}
+
+ 
+
+
+
+</style>
